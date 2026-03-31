@@ -21,6 +21,7 @@
 
             <!-- Hidden checkbox for mobile menu toggle -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox" title="Toggle navigation menu" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
               <span class="nav__toggle-line nav__toggle-line--middle"></span>
@@ -39,6 +40,16 @@
               <li class="nav__item">
                 <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
                 <a href="#integrantes" class="nav__link">Equipo</a>
+                <!-- FIX #1: corregido #inicio -> #hero -->
+                <a href="#hero" class="nav__link">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <!-- FIX #2: corregido #sobre -> #about -->
+                <a href="#about" class="nav__link">Acerca de</a>
+              </li>
+              <li class="nav__item">
+                <!-- FIX #3: corregido #integrantes -> #team -->
+                <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
           </div>
@@ -50,6 +61,7 @@
           <div class="hero__container">
             <div class="hero__content">
               <h1 class="hero__title">Estructuras de Datos & Algoritmos</h1>
+              <h1 class="hero__title">Estructuras de Datos &amp; Algoritmos</h1>
               <p class="hero__subtitle">
                 Explorando el mundo de los algoritmos y la eficiencia computacional
               </p>
@@ -138,6 +150,12 @@
                   <img
                     src="https://picsum.photos/300/300?random=1"
                     alt="Nombre Integrante 1"
+              <!-- INTEGRANTE 1: Tadeo Joaquín Cárdenas Soto -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://github.com/JuegaTades7175.png"
+                    alt="Tadeo Joaquín Cárdenas Soto"
                     class="team-card__photo"
                   />
                 </div>
@@ -150,6 +168,11 @@
                     <!-- Reemplaza # con tu URL de GitHub -->
                     <a
                       href="#"
+                  <h3 class="team-card__name">Tadeo Joaquín Cárdenas Soto</h3>
+                  <p class="team-card__role">Administrador del Ejército</p>
+                  <div class="team-card__social">
+                    <a
+                      href="https://github.com/JuegaTades7175"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
@@ -157,6 +180,8 @@
                     <!-- Reemplaza # con tu URL de LinkedIn -->
                     <a
                       href="#"
+                    <a
+                      href="https://www.linkedin.com/in/tadeo-joaquin-cardenas-soto-249662292"
                       class="team-card__social-link team-card__social-link--linkedin"
                     >
                       <i class="fab fa-linkedin"></i>
