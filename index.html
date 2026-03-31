@@ -20,6 +20,7 @@
             </div>
 
             <!-- Hidden checkbox for mobile menu toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" title="Toggle navigation menu" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
@@ -29,6 +30,16 @@
 
             <ul class="nav__list">
               <li class="nav__item">
+                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
+                <a href="#inicio" class="nav__link">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
+                <a href="#sobre" class="nav__link">Acerca de</a>
+              </li>
+              <li class="nav__item">
+                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
+                <a href="#integrantes" class="nav__link">Equipo</a>
                 <!-- FIX #1: corregido #inicio -> #hero -->
                 <a href="#hero" class="nav__link">Inicio</a>
               </li>
@@ -49,6 +60,7 @@
         <section id="hero" class="hero">
           <div class="hero__container">
             <div class="hero__content">
+              <h1 class="hero__title">Estructuras de Datos & Algoritmos</h1>
               <h1 class="hero__title">Estructuras de Datos &amp; Algoritmos</h1>
               <p class="hero__subtitle">
                 Explorando el mundo de los algoritmos y la eficiencia computacional
@@ -131,6 +143,13 @@
             </div>
 
             <div class="team__grid">
+              <!-- INTEGRANTE 1: Reemplaza con tus datos -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
+                  <img
+                    src="https://picsum.photos/300/300?random=1"
+                    alt="Nombre Integrante 1"
               <!-- INTEGRANTE 1: Tadeo Joaquín Cárdenas Soto -->
               <div class="team-card">
                 <div class="team-card__image">
@@ -141,6 +160,14 @@
                   />
                 </div>
                 <div class="team-card__content">
+                  <!-- Aquí tu nombre completo -->
+                  <h3 class="team-card__name">Nombre Integrante 1</h3>
+                  <!-- Aquí tu especialidad o rol -->
+                  <p class="team-card__role">Tu Especialidad</p>
+                  <div class="team-card__social">
+                    <!-- Reemplaza # con tu URL de GitHub -->
+                    <a
+                      href="#"
                   <h3 class="team-card__name">Tadeo Joaquín Cárdenas Soto</h3>
                   <p class="team-card__role">Administrador del Ejército</p>
                   <div class="team-card__social">
@@ -150,6 +177,9 @@
                     >
                       <i class="fab fa-github"></i>
                     </a>
+                    <!-- Reemplaza # con tu URL de LinkedIn -->
+                    <a
+                      href="#"
                     <a
                       href="https://www.linkedin.com/in/tadeo-joaquin-cardenas-soto-249662292"
                       class="team-card__social-link team-card__social-link--linkedin"
