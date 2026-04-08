@@ -21,7 +21,6 @@
 
             <!-- Hidden checkbox for mobile menu toggle -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
-            <input type="checkbox" id="nav-toggle" class="nav__checkbox" title="Toggle navigation menu" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
               <span class="nav__toggle-line nav__toggle-line--middle"></span>
@@ -30,25 +29,15 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
-                <a href="#inicio" class="nav__link">Inicio</a>
-              </li>
-              <li class="nav__item">
-                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
-                <a href="#sobre" class="nav__link">Acerca de</a>
-              </li>
-              <li class="nav__item">
-                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
-                <a href="#integrantes" class="nav__link">Equipo</a>
-                <!-- FIX #1: corregido #inicio -> #hero -->
+                <!-- FIX BUG #1: href corregido de #inicio → #hero -->
                 <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
-                <!-- FIX #2: corregido #sobre -> #about -->
+                <!-- FIX BUG #2: href corregido de #sobre → #about -->
                 <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
-                <!-- FIX #3: corregido #integrantes -> #team -->
+                <!-- FIX BUG #3: href corregido de #integrantes → #team -->
                 <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
@@ -61,7 +50,6 @@
           <div class="hero__container">
             <div class="hero__content">
               <h1 class="hero__title">Estructuras de Datos & Algoritmos</h1>
-              <h1 class="hero__title">Estructuras de Datos &amp; Algoritmos</h1>
               <p class="hero__subtitle">
                 Explorando el mundo de los algoritmos y la eficiencia computacional
               </p>
@@ -143,45 +131,89 @@
             </div>
 
             <div class="team__grid">
-              <!-- INTEGRANTE 1: Reemplaza con tus datos -->
-              <div class="team-card">
-                <div class="team-card__image">
-                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
-                  <img
-                    src="https://picsum.photos/300/300?random=1"
-                    alt="Nombre Integrante 1"
               <!-- INTEGRANTE 1: Tadeo Joaquín Cárdenas Soto -->
               <div class="team-card">
                 <div class="team-card__image">
                   <img
-                    src="https://github.com/JuegaTades7175.png"
+                    src="https://avatars.githubusercontent.com/u/216233472?v=4&size=64"
                     alt="Tadeo Joaquín Cárdenas Soto"
                     class="team-card__photo"
                   />
                 </div>
                 <div class="team-card__content">
-                  <!-- Aquí tu nombre completo -->
-                  <h3 class="team-card__name">Nombre Integrante 1</h3>
-                  <!-- Aquí tu especialidad o rol -->
-                  <p class="team-card__role">Tu Especialidad</p>
-                  <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
-                    <a
-                      href="#"
                   <h3 class="team-card__name">Tadeo Joaquín Cárdenas Soto</h3>
                   <p class="team-card__role">Administrador del Ejército</p>
                   <div class="team-card__social">
                     <a
                       href="https://github.com/JuegaTades7175"
                       class="team-card__social-link team-card__social-link--github"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i class="fab fa-github"></i>
                     </a>
-                    <!-- Reemplaza # con tu URL de LinkedIn -->
+                    <a
+                      href="https://www.linkedin.com/in/tadeo-joaquín-cárdenas-soto-249662292"
+                      class="team-card__social-link team-card__social-link--linkedin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRANTE 2: Reemplaza con tus datos -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://picsum.photos/300/300?random=2"
+                    alt="Nombre Integrante 2"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Nombre Integrante 2</h3>
+                  <p class="team-card__role">Tu Especialidad</p>
+                  <div class="team-card__social">
                     <a
                       href="#"
+                      class="team-card__social-link team-card__social-link--github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
                     <a
-                      href="https://www.linkedin.com/in/tadeo-joaquin-cardenas-soto-249662292"
+                      href="#"
+                      class="team-card__social-link team-card__social-link--linkedin"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRANTE 3: Reemplaza con tus datos -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://picsum.photos/300/300?random=3"
+                    alt="Nombre Integrante 3"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Nombre Integrante 3</h3>
+                  <p class="team-card__role">Tu Especialidad</p>
+                  <div class="team-card__social">
+                    <a
+                      href="#"
+                      class="team-card__social-link team-card__social-link--github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="#"
                       class="team-card__social-link team-card__social-link--linkedin"
                     >
                       <i class="fab fa-linkedin"></i>
